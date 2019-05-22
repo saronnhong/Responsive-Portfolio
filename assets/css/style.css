@@ -22,6 +22,7 @@ body {
   height: auto;
   margin: 0 auto;
   clear: both;
+  margin-left: 40px;          /*add to match 980px screen*/
 }
 
 h1,
@@ -85,6 +86,8 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 80px;               /* add to match 980px screen */
+  
 }
 
 nav a {
@@ -125,6 +128,8 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
+  max-width: 600px;                       /*add to match 980px screen*/
+  width: 100%
 }
 
 .main-section {
@@ -142,9 +147,11 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  /* width: 274px; */
   margin: 20px 0 25px;
   overflow: auto;
+  width: 46%;                                   /* to match 980px screen */
+  max-width: 980px;
 }
 
 .work:nth-child(even) {
@@ -214,7 +221,7 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {                       //no longer needed
   .container {
     margin-left: 40px;
   } 
@@ -229,7 +236,7 @@ input[type=submit] {
   .work {
     width: 46%;
     max-width: 980px;
-  }
+  } */
 
 }
 @media screen and (max-width: 768px) {
